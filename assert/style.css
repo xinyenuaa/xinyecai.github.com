@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+b, u, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -19,28 +19,12 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-ul {
-	list-style: none
-}
-
-body {
-	background-color: #eee;
-}
-
-.clearfix:before,.clearfix:after {
-	content: "";
-	display: table
-}
-
-.clearfix:after {
-	clear: both
-}
-
-.clearfix {
-	*zoom: 1
-}
 strong{
 	font-weight: bold;
+}
+
+ol li {
+	margin-left: 2rem;
 }
 
 body {
@@ -51,7 +35,8 @@ body {
 	font-size: 1rem;
 	letter-spacing: .0625rem;
 	width: 100%;
-	overflow-x: hidden
+	overflow-x: hidden;
+	background-color: #eee;
 }
 
 .wrap {
@@ -63,12 +48,23 @@ body {
 }
 
 #header {
+	position:relative;
 	padding: 30px;
 	border-bottom: 5px solid #eee;
 }
 
 #header h1 {
 	font-size: 32px;
+}
+
+.language{
+	position:absolute;
+	display:inline-block;
+	top:0;
+	right:10px;
+	text-decoration:none;
+	font-style: italic;
+	color:#333;
 }
 
 #footer {
@@ -88,25 +84,12 @@ body {
 	margin-bottom: 15px;
 }
 
-.info {
-}
-
 .info p span {
 	width: 140px;
 	display: inline-block;
 	font-weight: bold;
 }
 
-.teaching p,
-.education p {
-	//text-indent: 2rem;
-}
-
-.education span {
-	font-style: italic;
-	font-weight: bold;
-	padding-right: 10px;
-}
 .funding p{
 	margin-bottom:10px;
 }
@@ -118,13 +101,6 @@ body {
 	font-weight: bold;
 	font-style: italic;
 }
-
-.academic  ol li,
-.academic  p,
-.funding ol li {
-	margin-left: 2rem;
-}
-
 .funding span {
 	font-weight: bold;
 }
